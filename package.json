@@ -1,0 +1,15 @@
+{
+  "name": "dev-env",
+  "version": "0.0.1",
+  "description": "Minimal development environment",
+  "scripts": {
+    "start": "npm run watch-js & npm run watch-jade & npm run watch-stylus & npm run serve",
+    "serve": "live-server ./build/",
+    "watch-jade": "jade -w src/html/ -o build/",
+    "watch-stylus": "stylus src/css/ -w -o build/css/",
+    "watch-js": "watchify src/js/main.coffee -v -t coffeeify -o build/js/bundle.js",
+    "build": "browserify src/js/main.coffee -t coffeeify -o build/js/bundle.js && jade src/html/ -o build/ && stylus src/css/ -o build/css/"
+  },
+  "author": "sugarshin",
+  "license": "MIT"
+}
