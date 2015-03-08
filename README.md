@@ -1,6 +1,6 @@
 # dev-env
 
-Minimal development environment
+Frontend minimal development environment
 
 ## Usage
 
