@@ -2,6 +2,8 @@
 
 Minimal development environment
 
+## Usage
+
 ```shell
 mkdir project-name && cd $_
 git clone --depth 1 git@github.com:sugarshin/dev-env.git .
