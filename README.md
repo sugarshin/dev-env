@@ -14,8 +14,6 @@ scripts
 
 ```shell
 npm start
-
-npm run build
 ```
 
 ## License
